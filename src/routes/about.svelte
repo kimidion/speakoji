@@ -1,0 +1,22 @@
+<script>
+    import { fade } from 'svelte/transition';
+</script>
+<style>
+    .container {
+        padding: 2%;
+    }
+</style>
+<svelte:head>
+    <title>About Speakoji</title>
+</svelte:head>
+
+<div class="container" transition:fade>
+    <p><a href="/">BACK</a></p>
+    <p>High quality, motor memory text-to-speech apps should be free for all and available on all devices! This app is in development.</p>
+    <p>Email me at kim[dot]morphplay[at]gmail[dot]com</p>
+    <h3>More info about AAC and motor planning/memory</h3>
+    <ul>
+        <li><a href="https://www.asha.org/PRPSpecificTopic.aspx?folderid=8589942773&section=Key_Issues" target="_blank" title="Augmentative and Alternative Communication">Augmentative and Alternative Communication</a></li>
+        <li><a href="http://adaptingcreatively.blogspot.com/2012/07/one-easy-way-to-increase-vocabulary-on.html" target="_blank" title="Adapting Creatively: One Easy Way to Increase Vocabulary on AAC Devices">Adapting Creatively: One Easy Way to Increase Vocabulary on AAC Devices</a></li>
+    </ul>
+</div>
