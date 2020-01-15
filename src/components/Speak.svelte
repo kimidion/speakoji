@@ -163,5 +163,5 @@
   <i class="material-icons">backspace</i>
 </button>
 <button class="speak key-button" on:click={() => playSpeech(phrase)}>
-  <i class="material-icons">speaker_phone</i>
+  <i class="material-icons">play_circle_filled</i>
 </button>

@@ -5,6 +5,7 @@ import { animals } from './animals';
 import { drink } from './drink';
 import { food } from './food';
 import { home } from './home';
+import { math } from './math'
 import { media } from './media';
 import { myself } from './myself';
 import { numbers } from './numbers';
@@ -23,6 +24,7 @@ export const vocab = {
     drink,
     food,
     home,
+    math,
     media,
     myself,
     numbers,

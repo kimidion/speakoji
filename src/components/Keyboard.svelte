@@ -205,12 +205,12 @@
   }
   .bg {
     border-radius: 50%;
-    width: calc((100vw/12)*0.6);
-    height: calc((100vw/12)*0.6);
+    width: calc(100vw/8);
+    height: calc(100vw/9);
     position: absolute;
-    top: 60%;
+    top: 95%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -33%);
   }
   .wordSpan {
     position: absolute;
@@ -223,10 +223,11 @@
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1rem;
+    font-size: .8rem;
   }
   .material-icons {
     font-size: 1rem;
+    margin-top: 4px;
   }
   .material-icons.check {
     color: green;
@@ -271,10 +272,14 @@
       font-size: .75rem;
     }
     .bg {
-      width: calc((100vw/12)*0.7);
-      height: calc((100vw/12)*0.7);
+      width: calc(100vw/8);
+      height: calc(100vw/9);
+      transform: translate(-50%, -50%);
     }
-    .icon, .material-icons {
+    .icon {
+      font-size: 1.4rem;
+    }
+    .material-icons {
       font-size: 1.9rem;
     }
     .options .key-button {

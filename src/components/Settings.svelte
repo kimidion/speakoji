@@ -8,8 +8,8 @@
         border: none;
         background: transparent;
         position: fixed;
-        top: 1vw;
-        right: 1vw;
+        top: 5px;
+        right: 0;
     }
     .closebtn:focus, .closebtn:active {
         border: none;
@@ -23,7 +23,6 @@
         right: 0px;
         height: 100%;
         width: 40vw;
-        padding: 15px;
         line-height: 1.2;
     }
     .material-icons {
