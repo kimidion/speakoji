@@ -7,7 +7,7 @@
 
   let wordList = [];
   let filterArr = [];
-  $: lookup = '';
+  let lookup = '';
   let count = 0;
   const keys = Object.keys(vocab);
   keys.forEach((page) => {
@@ -15,6 +15,12 @@
       if (word.word && word.word !== '' && !word.action) {
         count += 1;
         wordList.push(word.word.toUpperCase());
+        if (word.expand && word.expand.length > 0) {
+          word.expand.forEach((w) => {
+            count += 1;
+            wordList.push(w.toUpperCase());
+          });
+        }
       }
     });
   });
@@ -47,7 +53,7 @@
   .closebtn {
     border: none;
     background: transparent;
-    position: fixed;
+    position: absolute;
     top: 1vw;
     right: 1vw;
   }
@@ -59,13 +65,17 @@
     background-color: white;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.3);
     position: fixed;
-    top: 0;
+    top: 110vh;
     right: 0px;
     width: 100%;
     height: 94%;
     padding: 15px;
     line-height: 1.2;
     overflow-y: auto;
+    transition: top 500ms linear;
+  }
+  .filterOverlay.open {
+    top: 0;
   }
   .material-icons {
     font-size: 1.5rem;
@@ -111,8 +121,8 @@
   }
 </style>
 
-{#if $filterOpen}
-  <div class="filterOverlay" transition:fade>
+
+  <div class="filterOverlay" class:open={$filterOpen} transition:fade>
     <button class="closebtn" on:click={() => filterOpen.update(i => !i)}>
         <i class="material-icons">close</i>
     </button>
@@ -135,4 +145,4 @@
       </div>
     </div>
   </div>
-{/if}
+

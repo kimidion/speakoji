@@ -14,7 +14,7 @@ export const people = {
         { y: 0, x: 7, word: "", icon: "", emoji: "" },
         { y: 0, x: 8, word: "", icon: "", emoji: "" },
         { y: 0, x: 9, word: "", icon: "", emoji: "" },
-        { y: 0, x: 10, word: "", icon: "", emoji: "" },
+        { y: 0, x: 10, word: "who", icon: "", emoji: "", expand: ["whom", "whose"] },
         { y: 1, x: 0,  word: "", icon: "", emoji: "" },
         { y: 1, x: 1,  word: "", icon: "", emoji: "" },
         { y: 1, x: 2,  word: "", icon: "", emoji: "" },

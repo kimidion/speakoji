@@ -170,15 +170,9 @@
     opacity: 0;
     pointer-events: none;
   }
-  .key-button:hover {
-    background: white radial-gradient(circle, transparent 1%, #e9ecef 1%) center/15000%;
-  }
   .key-button:active {
-    border:2px solid rgb(211, 211, 211);
-    border-radius: 5px;
-    box-shadow: inset 0 0 25px rgb(211, 211, 211);
     outline: none;
-    background-color: white;
+    background-color: rgb(228, 228, 228);
     background-size: 100%;
     transition: background 0.1s;
   }
@@ -277,7 +271,7 @@
       transform: translate(-50%, -50%);
     }
     .icon {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
     }
     .material-icons {
       font-size: 1.9rem;

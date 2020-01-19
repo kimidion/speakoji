@@ -12,6 +12,7 @@
     "test": "run-p --race dev cy:run"
   },
   "dependencies": {
+    "@sveltejs/gestures": "0.0.1",
     "compression": "^1.7.1",
     "material-icons": "^0.3.1",
     "polka": "next",

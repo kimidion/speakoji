@@ -75,8 +75,15 @@
   });
   
   const unsubscribeKeyboardEnabled = keyboardEnabled.subscribe(value => {
-    if (value) {
-      document.getElementById('textBox').focus();
+    if (typeof window !== "undefined") {
+      const element = document.getElementById('textBox');
+      if (value) {
+        element.setAttribute('autofocus', 'autofocus');
+        element.focus();
+        element.click();
+      } else {
+        element.removeAttribute('autofocus');
+      }
     }
   });
 
@@ -130,22 +137,13 @@
     left: 50%;
     transform: translate(-50%, -50%)
   }
-  .key-button:hover {
-    background: white radial-gradient(circle, transparent 1%, #e9ecef 1%) center/15000%;
-  }
   .key-button:active {
-    border:2px solid rgb(211, 211, 211);
-    border-radius: 5px;
-    box-shadow: inset 0 0 25px rgb(211, 211, 211);
     outline: none;
-    background-color: white;
+    background-color: rgb(228, 228, 228);
     background-size: 100%;
     transition: background 0.1s;
   }
   .key-button:focus {
-    /* border:2px solid rgb(211, 211, 211);
-    border-radius: 5px;
-    box-shadow: inset 0 0 25px rgb(211, 211, 211); */
     outline: none;
   }
   @media only screen and (min-width: 825px) {

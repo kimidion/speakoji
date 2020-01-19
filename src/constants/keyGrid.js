@@ -3,8 +3,8 @@ import { colors } from '../constants/colors';
 
 // bottom row only moves to new pages
 // static rightmost column for navigational elements
-const back = { y: 0, x: 11, word: "BACK", icon: "settings_backup_restore", emoji: "", action: actions.back, bg: colors.lightgrey };
-const clear = { y: 1, x: 11, word: "CLEAR", icon: "clear_all", emoji: "", action: actions.clear, bg: colors.lightgrey };
+const clear = { y: 0, x: 11, word: "CLEAR", icon: "clear_all", emoji: "", action: actions.clear, bg: colors.lightgrey };
+const back = { y: 1, x: 11, word: "BACK", icon: "settings_backup_restore", emoji: "", action: actions.back, bg: colors.lightgrey };
 const pluralize = { y: 2, x: 11, word: "PLURAL", icon: "", emoji: "+s", action: actions.pluralize, bg: colors.lightgrey };
 const keyboard = { y: 3, x: 11, word: "QWERTY", icon: "keyboard", emoji: "", action: actions.keyboard, bg: colors.lightgrey };
 const expand = { y: 4, x: 11, word: "EXPAND", icon: "filter_frames", emoji: "", action: actions.expand, bg: colors.lightgrey };
@@ -23,7 +23,7 @@ const row1 = new Array(
     { y: 0, x: 8 },
     { y: 0, x: 9 },
     { y: 0, x: 10 },
-    back);
+    clear);
 const row2 = new Array(
     { y: 1, x: 0 },
     { y: 1, x: 1 },
@@ -36,7 +36,7 @@ const row2 = new Array(
     { y: 1, x: 8 },
     { y: 1, x: 9 },
     { y: 1, x: 10 },
-    clear);
+    back);
 const row3 = new Array(
     { y: 2, x: 0 },
     { y: 2, x: 1 },

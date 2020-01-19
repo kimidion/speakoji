@@ -13,9 +13,12 @@
         const unsubscribePage = page.subscribe(value => {
             localStorage.setItem("page", value);
         });
-        
-        filter.set(selectedFilter);
-        page.set(selectedPage);
+        if (selectedFilter && selectedFilter !== "null") {
+            filter.set(selectedFilter);
+        }
+        if (selectedPage && page !== null) {
+            page.set(selectedPage);
+        }
 
         onDestroy(unsubscribePage, unsubscribeFilter);
     }

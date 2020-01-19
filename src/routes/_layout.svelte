@@ -5,7 +5,7 @@
 <style>
     .screen {
         position: relative;
-        background-color: #e9ecef;
+        background-color: #ffffff;
         position: fixed;
         top: 0;
         left: 0;
@@ -25,7 +25,7 @@
         height: 6%;
         position: absolute;
         bottom: 0;
-        background-color: #fffc00;
+        background-color: rgb(252, 238, 140);
         width: 100%;
         margin: 0;
         z-index: 1;
